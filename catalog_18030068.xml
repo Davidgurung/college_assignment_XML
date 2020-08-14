@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <?xml-stylesheet type="text/css" href="catalog_18030068.css"?> 
+<vehicle_shop xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="catalog_18030068.xsd"> 
+    <shopDetail>
+		<shopName ID="S1">CAR FOR YOU VEHICLE SHOWROOM </shopName>
+		<shop_manager> David Gurung </shop_manager>
+        <address> Gaurigaun , Greenland, Tokha </address>
+        <contact_number> 01-1234567 </contact_number>
+        <website_url>www.carforyou.com </website_url>
+        <logo class="logo"/>
+    </shopDetail>
+
+    <vehicles>
+        <product id="1" model="Hatchback">
+            <brand_name> Grand i20  </brand_name>
+            <brand_details> A car for you at an affordable price with comforting features. </brand_details>
+            <company codeID="c1"> Hyundai </company>
+            <color>Silver</color>
+            <gas gasID="G1"> diesel </gas>
+            <car_condition> Brand New </car_condition>
+            <price> 27,96,000 NRs </price>
+            
+            <features>
+                <speed> 30kmphr </speed>
+                <mileage> 20kmpl </mileage>
+                <number_of_seats> 5 seats </number_of_seats>
+                <ground_clearance> 165mm groundclearance</ground_clearance>
+                <brakes> Disc brakers </brakes>
+                <weight> 1025kg </weight>
+            </features>
+
+            <dimensions>
+                <height> 1734mm in height </height>
+                <length> 3985mm in length</length>
+                <width> 1505mm in width </width>
+            </dimensions>
+
+            <quantity total="5">
+                <available> 1 </available>
+                <sold> 4 </sold>
+            </quantity>
+            <discount> 25 percent </discount>
+            
+        </product>
+
+       <product id="2" model="Compact_SUV">
+            <brand_name> Ecosport </brand_name>
+            <brand_details>A comfortable Suv in your hand.</brand_details>
+            <company codeID="c2">  Ford </company>
+            <color>Blue</color>
+            <gas gasID="G2"> petrol </gas>
+            <car_condition> Used </car_condition>
+            <price> 35,90,900 Nrs </price>
+            
+            <features>
+                <speed> 55kmphr </speed>
+                <mileage> 25kmpl </mileage>
+                <number_of_seats> 5 seats </number_of_seats>
+                <ground_clearance> 200mm ground clearance</ground_clearance>
+                <brakes> ABS </brakes>
+                <weight> 1320 kg </weight>
+            </features>
+
+            <dimensions>
+                <height> 1647mm in height</height>
+                <length> 3998mm in length</length>
+                <width> 1647mm in width </width>
+            </dimensions>
+
+            <quantity total="7">
+                <available> 5 </available>
+                <sold> 2 </sold>
+            </quantity>
+            <discount> 20 percent </discount>
+        </product>
+
+       <product id="3" model="Electric_Car">
+            <brand_name> E6 </brand_name>
+            <brand_details> A new electric car for your economy.</brand_details>
+            <company codeID="c3"> BYD </company>
+            <color>Red</color>
+            <gas gasID="G3"> electric </gas>
+            <car_condition> Brand New </car_condition>
+            <price> 50,00,000 NRs </price>
+            
+            
+            <features>
+                <speed> 37kmphr </speed>
+                <mileage> 45kmpl </mileage>
+                <number_of_seats> 4 seats </number_of_seats>
+                <ground_clearance>  220mm ground clearance </ground_clearance>
+                <brakes> Drum brakes </brakes>
+                <weight>  ‎959 kg </weight>
+            </features>
+
+            <dimensions>
+                <height> 1200mm in height</height>
+                <length> 2700mm in length</length>
+                <width> 1550 in width</width>
+            </dimensions>
+            <quantity total="8">
+                <available> 3 </available>
+                <sold> 5 </sold>
+            </quantity>
+            <discount> 25 percent</discount>
+           
+        </product>
+
+        <product id="4" model="SUV">
+            <brand_name> Compass </brand_name>
+            <brand_details> A great SUV for adventerous people </brand_details>
+            <company codeID="c4"> Jeep </company>
+            <color>Maroon</color>
+            <gas gasID="G4"> diesel </gas>
+            <car_condition> Brand New </car_condition>
+            <price>68,50,000 NRs </price>
+            
+            
+            <features>
+                <speed> 43kmphr </speed>
+                <mileage> 17.1 kmpl </mileage>
+                <number_of_seats> 5 seats </number_of_seats>
+                <ground_clearance> 229 mm ground clearance</ground_clearance>
+                <brakes> Pivoted tye Shoe Brakes </brakes>
+                <weight> 1562 kg </weight>
+            </features>
+
+            <dimensions>
+                <height> 1640mm in height</height>
+                <length> 4395mm in length</length>
+                <width> 1818mm in width </width>
+            </dimensions>
+
+            <quantity total="2">
+                <available> 1 </available>
+                <sold> 1 </sold>
+            </quantity>
+            <discount> 5 percent </discount>
+        </product>
+
+        <product id="5" model="Hatchback">
+            <brand_name> POLO </brand_name>
+            <brand_details> An affordale care at your garden.</brand_details>
+            <company codeID="c5"> Volkswagen </company>
+            <color>Black</color>
+            <gas gasID="G4"> petrol </gas>
+            <car_condition> Brand New </car_condition>
+            <price> 26,95,000 Nrs </price>
+            
+            <features>
+                <speed> 44kmphr </speed>
+                <mileage> 18kmpl </mileage>
+                <number_of_seats> 4 seats</number_of_seats>
+                <ground_clearance> 165mm ground clearance </ground_clearance>
+                <brakes> Drum brakes </brakes>
+                <weight> 1067 kg ‎ </weight>
+
+            </features>
+            <dimensions>
+                <height> 1478mm in height </height>
+                <length> 3971mm in length </length>
+                <width> 1682mmin width </width>
+            </dimensions>
+
+            <quantity total="10">
+                <available> 3 </available>
+                <sold> 7 </sold>
+            </quantity>
+            <discount> 5 percent </discount>
+            
+        </product>
+    </vehicles>
+</vehicle_shop>

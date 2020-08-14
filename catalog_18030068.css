@@ -1,0 +1,150 @@
+vehicle_shop{
+    background-color: #F9966B;
+    border-style: solid;
+    margin: 60px;
+    line-height: 120px;
+    border: block ;
+    border-width: 5px;
+    border-radius: 15px;
+   
+}
+
+shopName{
+
+text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+display: block; 
+font-size: 50px;
+}
+
+
+shop_manager, address, contact_number ,website_url{
+    display: block;
+    height: 23px;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    color : #307D7E;
+}
+
+
+logo{
+    left: 150px;
+    top: 120px;
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    color: transparent;
+    float: right;
+}   
+
+
+
+product{
+    display: block;
+    font-family: "Times New Roman", Times, serif;
+    border: dotted;
+    border-color: #4ee2ec;
+    margin: 30px;
+    width: 800px;
+    height: 700px;
+}
+
+brand_name, brand_details, company,  color, gas , price, car_condition, discount{
+    display: block;
+    height: 30px;
+    margin-left: 120px;
+
+}
+
+
+
+features::before{
+    display: block;
+    content: "Features: ";
+    color :#F535AA;
+    height: 23px;
+    margin-left: 100px;
+}
+speed, mileage, number_of_seats, ground_clearance, brakes, weight {
+    display: block;
+    display: list-item; list-style: circle;
+    height: 30px;
+    margin-left: 150px;
+} 
+
+dimensions::before{
+    display: block;
+    content: "Dimensions: ";
+    color:#4CC417;
+    height: 23px;
+    margin-left: 100px;
+}
+
+height, length, width{
+    display: block;
+    display: list-item; list-style: lower-roman;
+    height: 30px;
+    margin-left: 180px;
+} 
+quantity::before{
+    display: block;
+    content: "Quantity: ";
+    color: #E41B17;
+    height: 23px;
+    margin-left: 100px;
+}
+
+available, sold{
+    display: block;
+    display: list-item; list-style: inherit;
+    height: 30px;
+    margin-left: 150px;
+} 
+available::before{
+    content: "Available: ";
+    color: rgb(150, 53, 53);
+}
+
+    sold::before{
+        content: "Sold out: ";
+        color: rgb(150, 53, 53);
+
+}
+color::before{
+    content: "Color: ";
+    color: rgb(101, 238, 101);
+
+}
+brand_name::before{
+    content: "Brand Name: ";
+    color: rgb(101, 238, 101);
+}
+
+company::before{
+    content: "Company name: ";
+    color: rgb(101, 238, 101);
+}
+
+car_condition::before{
+    content: "Car_type: ";
+    color: rgb(101, 238, 101);
+}
+price::before{
+    content: "Price: ";
+    color: rgb(101, 238, 101);
+}
+gas::before{
+    content: "Price: ";
+    color: rgb(101, 238, 101);
+}
+
+brand_details::before{
+    content: "Safety level: ";
+    color: rgb(101, 238, 101);
+}
+discount::before{
+    content: "Discount: ";
+    color: rgb(101, 238, 101);
+}

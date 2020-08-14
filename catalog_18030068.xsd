@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="company">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="codeID" type="xs:string"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="features">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="speed"/>
+                <xs:element name="mileage"/>
+                <xs:element name="number_of_seats"/>
+                <xs:element name="ground_clearance"/>
+                <xs:element name="brakes"/>
+                <xs:element name="weight"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="dimensions">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="height"/>
+                <xs:element name="length"/>
+                <xs:element name="width"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="quantity">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="available"/>
+                <xs:element name="sold"/>
+            </xs:sequence>
+            <xs:attribute name="total" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>    
+
+    <xs:element name="gas">
+        <xs:complexType>
+          <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="gasID" type="xs:string"/>
+              </xs:extension>
+          </xs:simpleContent>
+            
+        </xs:complexType>
+    </xs:element>    
+
+
+    <xs:element name="product">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="brand_name" type="xs:string"/>
+                <xs:element name="brand_details" type="xs:string"/>
+                <xs:element ref="company"/>
+                <xs:element name="color">     
+                    <xs:simpleType> 
+                        <xs:restriction base="xs:string">      
+                            <xs:enumeration value="Red"/>
+                            <xs:enumeration value="Maroon"/>
+                            <xs:enumeration value="Black"/>
+                            <xs:enumeration value="Silver"/>
+                            <xs:enumeration value="Blue"/> 
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element ref="gas"/>
+                <xs:element name="car_condition" type="xs:string"/>
+                <xs:element name="price" type="xs:string"/>
+                <xs:element ref="features"/>
+                <xs:element ref="dimensions"/>
+                <xs:element ref="quantity"/>
+                <xs:element name="discount" type="xs:string" minOccurs="1"/>
+                </xs:sequence>
+                <xs:attribute name="id" type="xs:integer" use="required"/>
+                <xs:attribute name="model" type="xs:string" use="required"/>
+         </xs:complexType>
+    </xs:element>
+
+
+
+
+    <xs:element name="vehicles">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="product" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="shopName">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="ID" type="xs:string" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="shopDetail">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="shopName"/>
+                <xs:element name="shop_manager" type="xs:string" />
+                <xs:element name="address" type="xs:string" />
+                <xs:element name="contact_number" type="xs:string" />
+                <xs:element name="website_url" type="xs:string" />
+                <xs:element name="logo">
+                    <xs:complexType>
+                            <xs:attribute name="class" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    
+    <xs:element name="vehicle_shop">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="shopDetail"/>
+                <xs:element ref="vehicles"/> 
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
